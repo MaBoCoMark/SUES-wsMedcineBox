@@ -7,4 +7,4 @@ SUES 2021Q3 Project
 
 A brand new version of Medcine Box is Here!
 
-Check the [Development Document](https://github.com/MaBoCoMark/SUES-wsMedcineBox/DevDocs) now!
+Check the [Development Document](https://github.com/MaBoCoMark/SUES-wsMedcineBox/tree/main/DevDocs) now!
