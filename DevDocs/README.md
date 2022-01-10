@@ -7,7 +7,7 @@ There are 3 types of APIs:
 ```
 ### Read APIs
 
-|Function|Type|Description|
+|Function|Function Type|Description|
 |-|-|-|
 |ifRequests()|int|To check if there is any request pending, 1 means True.|
 |getPendingTime()|String|To get the FULL string of user input|
@@ -21,17 +21,23 @@ There are 3 types of APIs:
 
 ### Write APIs
 
-|Function|Type|Usage|
-|-|-|-|
-|clearRequests()|void|After finish any expected movements|
-|yySet(int)|void|Set the number of **_year_** |
-|mmSet(int)|void|Set the number of **_month_** |
-|ddSet(int)|void|Set the number of **_date_** |
-|hhSet(int)|void|Set the number of **_hour_** |
-|minSet(int)|void|Set the number of **_minutes_** |
+|Function|Request Parameter|Restriction|Usage|
+|-|-|-|-|
+|clearRequests()|void|No|After finish any expected movements|
+|yySet(int)|int,1|Yes|Set the number of **_year_** |
+|mmSet(int)|int,1|Yes|Set the number of **_month_** |
+|ddSet(int)|int,1|Yes|Set the number of **_date_** |
+|hhSet(int)|int,1|Yes|Set the number of **_hour_** |
+|minSet(int)|int,1|Yes|Set the number of **_minutes_** |
 
 ### Debug APIs
 
 |Function|Type|Description|
 |-|-|-|
 |clearPending()|void| Let ifRequest()=0|
+
+### Basic Functions
+|Function|Request Parameter|Restriction|Description|
+|-|-|-|-|
+|HTMLsetup()|int,1|No, Default is 0|Send 1 to start Serial debug|
+|HTTPLoop()|int,1|No, Default is 0|Send 1 to start Serial debug|
